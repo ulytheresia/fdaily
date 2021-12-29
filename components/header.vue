@@ -20,10 +20,11 @@
     <template #end>
       <b-navbar-item tag="div">
         <div class="buttons">
+          <b-icon icon="upload" size="is-large"> </b-icon>
           <a class="button is-primary">
-            <strong>Sign up</strong>
+            <strong>Upload</strong>
           </a>
-          <a class="button is-light"> Log in </a>
+          <a class="button is-light"> Sign in </a>
         </div>
       </b-navbar-item>
     </template>

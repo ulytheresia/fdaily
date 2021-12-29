@@ -1,7 +1,7 @@
 <template>
-    <div>
-        iniii
-    </div>
+    <section class="section">
+        ini section
+    </section>
 </template>
 
 <script>
