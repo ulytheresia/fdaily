@@ -6,7 +6,8 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "heroku-postbuild" : " npm run build"
   },
   "dependencies": {
     "awesome-vue-star-rating": "^1.0.9",
