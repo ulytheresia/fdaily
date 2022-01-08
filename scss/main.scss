@@ -1,0 +1,23 @@
+// default variable for themes
+@import './themes';
+@import '~bulma';
+@import '~buefy/src/scss/buefy';
+
+nav.navbar.header {
+  border-bottom: 1px solid $grey;
+  .navbar-burger {
+    display: block;
+  }
+  .navbar-menu {
+    display: flex;
+    justify-content: center;
+    .navbar-start {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      .control {
+        width: 90%;
+      }
+    }
+  }
+}

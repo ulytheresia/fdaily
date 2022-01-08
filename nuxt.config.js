@@ -1,3 +1,6 @@
+function findSCSSPath() {
+  return '~/scss/main.scss';
+}
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
@@ -20,11 +23,16 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
-  ],
+  css: [findSCSSPath()],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    {
+      src: '~/plugins/buefy.js'
+    },
+    {
+      src: '@/plugins/vue-awesome-swiper', mode: 'client'
+    }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

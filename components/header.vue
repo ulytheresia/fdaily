@@ -1,32 +1,39 @@
 <template>
-  <b-navbar>
-    <template #brand>
-      <b-navbar-item tag="router-link" :to="{ path: '/' }">
-        <img
-          src="https://raw.githubusercontent.com/buefy/buefy/dev/static/img/buefy-logo.png"
-          alt="Lightweight UI components for Vue.js based on Bulma"
-        />
-      </b-navbar-item>
-    </template>
-    <template #start>
-      <b-navbar-item href="#"> Home </b-navbar-item>
-      <b-navbar-item href="#"> Documentation </b-navbar-item>
-      <b-navbar-dropdown label="Info">
-        <b-navbar-item href="#"> About </b-navbar-item>
-        <b-navbar-item href="#"> Contact </b-navbar-item>
-      </b-navbar-dropdown>
-    </template>
+  <nav class="navbar header" role="navigation" aria-label="main navigation">
+    <div class="container">
+      <div class="navbar-brand">
+        <a role="button" class="navbar-burger burger" aria-label="menu">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+        <a class="navbar-item">
+          <img src="~assets/ini.png" />
+        </a>
+      </div>
 
-    <template #end>
-      <b-navbar-item tag="div">
-        <div class="buttons">
-          <b-icon icon="upload" size="is-large"> </b-icon>
-          <a class="button is-primary">
-            <strong>Upload</strong>
-          </a>
-          <a class="button is-light"> Sign in </a>
+      <div class="navbar-menu">
+        <!-- menu -->
+        <div class="navbar-start">
+          <b-input
+            expanded
+            placeholder="Search..."
+            type="search"
+            icon="magnify"
+            icon-clickable
+            @icon-click="searchIconClick"
+          >
+          </b-input>
         </div>
-      </b-navbar-item>
-    </template>
-  </b-navbar>
+        <!-- end -->
+        <div class="navbar-end">
+          <div class="buttons">
+            <b-button type="is-primary" icon-left="account"
+              >LOGIN/SIGNUP</b-button
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
 </template>
